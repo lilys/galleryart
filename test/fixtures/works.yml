@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  namework: MyString
+  description: MyText
+  discipline_id: 1
+  price: 1.5
+  teacher_id: 1
+
+two:
+  namework: MyString
+  description: MyText
+  discipline_id: 1
+  price: 1.5
+  teacher_id: 1
