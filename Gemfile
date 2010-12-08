@@ -29,6 +29,6 @@ gem 'devise', '1.1.rc0'
 # group :development, :test do
 #   gem 'webrat'
 # end
-group :development, :test do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-end
+#group :development, :test do
+#  gem 'sqlite3-ruby', :require => 'sqlite3'
+#end
