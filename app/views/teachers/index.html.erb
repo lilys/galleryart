@@ -1,23 +1,22 @@
-<h1>Listing teachers</h1>
-
-<table>
-  <tr>
-    <th>Nameteacher</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @teachers.each do |teacher| %>
-  <tr>
-    <td><%= teacher.nameteacher %></td>
-    <td><%= link_to 'Show', teacher %></td>
-    <td><%= link_to 'Edit', edit_teacher_path(teacher) %></td>
-    <td><%= link_to 'Destroy', teacher, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+<div id="content">
+	<h1>Teachers</h1>
+	<table>
+	  <tr>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+	
+	<% @teachers.each do |teacher| %>
+	  <tr>
+	    <td><%= teacher.nameteacher %></td>
+	    <td><%= link_to 'Show', teacher %></td>
+	    <td><%= link_to 'Edit', edit_teacher_path(teacher) %></td>
+	    <td><%= link_to 'Destroy', teacher, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	<% end %>
+	<%= link_to 'New Teacher', new_teacher_path %>
+	</table>
+</div>
 <br />
 
-<%= link_to 'New Teacher', new_teacher_path %>

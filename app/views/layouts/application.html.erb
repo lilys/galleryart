@@ -7,9 +7,26 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-
-<%= yield %>
+<div id="container">
+  <div id="header">
+    <h1>GALLERY ART</h1>
+  </div>
+<div id="navigation">
+    <p><strong>Menu</strong></p>
+    <ul>
+      <li><%= link_to "Home",{:action=>"home", :controller=>"pages"}%></li>
+      <li><%= link_to "Teachers", teachers_path %></li>
+      <li><%= link_to "Works", works_path %></li>
+      <li><%= link_to "Disciplines", disciplines_path %></li>
+      <li><%= link_to "About", {:action=>"about", :controller=>"pages"} %></li>
+      <li><%= link_to "Contact", {:action=>'contact',:controller=>'pages'} %></li>
+    </ul>
+  </div>
+  <%= yield %>
+  <div id="footer">
+    <p>Footer</p>
+  </div>
+</div>
 
 </body>
 </html>

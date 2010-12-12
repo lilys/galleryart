@@ -1,18 +1,11 @@
 Galleryart::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/teacher"
-
-  get "pages/work"
-
+  get "pages/about"
   get "pages/contact"
 
-  get "pages/about"
-
   resources :disciplines
-
   resources :teachers
-  
+  resources :works
+  #resources :pages
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

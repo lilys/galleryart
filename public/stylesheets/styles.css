@@ -12,7 +12,14 @@ div#navigation li{margin-bottom:5px;}
 div#extra{background:#CCC8B3;}
 div#footer{background:#BFBD93;}
 div#footer p{margin:0;padding:5px 10px}
-div#container{width:700px;margin:0 auto}
+div#container{
+  width:700px;
+  margin:0 auto;
+  background-image:url(bg.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+  padding-bottom:78px;
+}
 div#content{float:right;width:500px}
 div#navigation{float:left;width:200px}
 div#extra{float:right;width:500px}

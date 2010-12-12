@@ -1,0 +1,5 @@
+<h1>Works#edit</h1>
+<p>Find me in app/views/works/edit.html.erb</p>
+ <% form_for :work, @work, :url => work_path, :html => { :multipart => true } do |form| %>
+    <%= form.file_field :avatar %>
+  <% end %>

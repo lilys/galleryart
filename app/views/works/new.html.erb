@@ -1,0 +1,6 @@
+<!-- app/views/work/new.html.erb -->
+<% form_for @work, :html => { :multipart => true } do |form| %>
+      <%= form.label :avatar, "Avatar" %>
+      <%= form.file_field :avatar %>
+      <%= form.submit "Save Avatar!" %>
+<% end %>
