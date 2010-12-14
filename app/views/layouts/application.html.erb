@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Galleryart</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "style_gallery.css"%>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
@@ -11,7 +11,7 @@
   <div id="header">
     <h1>GALLERY ART</h1>
   </div>
-<div id="navigation">
+  <div id="navigation">
     <p><strong>Menu</strong></p>
     <ul>
       <li><%= link_to "Home",{:action=>"home", :controller=>"pages"}%></li>
@@ -23,10 +23,10 @@
     </ul>
   </div>
   <%= yield %>
+  <br>
   <div id="footer">
     <p>Footer</p>
   </div>
 </div>
-
 </body>
 </html>

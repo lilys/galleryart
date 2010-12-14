@@ -1,6 +1,35 @@
-<!-- app/views/work/new.html.erb -->
-<% form_for @work, :html => { :multipart => true } do |form| %>
-      <%= form.label :avatar, "Avatar" %>
-      <%= form.file_field :avatar %>
-      <%= form.submit "Save Avatar!" %>
-<% end %>
+<div id="wrapper">
+    <div id="content">
+      <h1>Nueva Obra</h1>
+      <%= form_for(@work) do |f| %>
+        <div class="field">
+          <%= f.label :Obra %><br />
+          <%= f.text_field :namework %>
+        </div>
+        <div class="field">
+          <%= f.label :Descripcion%><br />
+          <%= f.text_field :description %>
+        </div>
+        <div class="field">
+          <%= f.label :Disciplina %><br />
+          <%= f.collection_select :discipline_id, Discipline.find(:all), :id, :namediscipline, :prompt => "Seleccione una disciplina" %>
+        </div>
+        <div class="field">
+          <%= f.label :Precio %><br />
+          <%= f.text_field :price %>
+        </div>
+         <div class="field">
+          <%= f.label :Artista %><br />
+           <%= f.collection_select :teacher_id, Teacher.find(:all), :id, :nameteacher, :prompt => "Seleccione un Artista" %>
+        </div>
+        <div>
+            <%= f.label :avatar, "Avatar" %>
+            <%= f.file_field :avatar %>
+        </div>
+        <div class="actions">
+          <%= f.submit "Guardar" %>
+        </div>
+      <% end %>
+    </div>
+</div>
+

@@ -1,14 +1,13 @@
 html,body{margin:0;padding:0}
 body{
-  font: 76% arial,sans-serif;
-  text-align:center;
-  width:1000px;
-  height:100%;
-  position:relative;
-  margin:0 auto;
-  background:url(fondo1.jpg);
-  background-position:top left;
-  background-repeat:repeat-y;
+  background-image:url("deco.jpg");
+  font-family: Segoe UI;
+  font-size: 10pt;
+  margin-left: 35 px;
+  margin-top: 15 px;
+  background-position: top left;
+  background-repeat: repeat-y;
+  
 }
 p{margin:0 10px 10px}
 a{padding:5px; text-decoration:none; color:#000000;}

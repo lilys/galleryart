@@ -16,10 +16,6 @@ class WorksController < ApplicationController
 
   def new
    @work = Work.new
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @work }
-    end
   end
   def create
     @work = Work.create( params[:work] )
