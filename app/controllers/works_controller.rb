@@ -17,6 +17,7 @@ class WorksController < ApplicationController
   def new
    @work = Work.new
   end
+
   def create
     @work = Work.create( params[:work] )
   end

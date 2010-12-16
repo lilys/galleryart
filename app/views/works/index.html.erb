@@ -10,6 +10,13 @@
 	<% @works.each do |work| %>
 	  <tr>
 	    <td><%= work.namework %></td>
+	    <td><%= work.description %></td>
+	    <td><%= work.discipline_id %></td>
+	    <td><%= work.teacher_id %></td>
+	    <td><%= work.price %></td>
+	    <%= image_tag @work.avatar.url %>
+      <%= image_tag @work.avatar.url(:thumb) %>
+      <%= image_tag @work.avatar.url(:small) %>
 	    <td><%= link_to 'Show', work %></td>
 	    <td><%= link_to 'Edit', edit_work_path(work) %></td>
 	    <td><%= link_to 'Destroy', work, :confirm => 'Are you sure?', :method => :delete %></td>

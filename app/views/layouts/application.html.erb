@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Galleryart</title>
-  <%= stylesheet_link_tag "style_gallery.css"%>
+  <%= stylesheet_link_tag "style_gallery", :media=>'screen'%>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body background="images/blue_tiles">
+<body>
 <div id="container">
   <div id="header">
     <h1>GALLERY ART</h1>
@@ -14,12 +14,11 @@
   <div id="navigation">
     <p><strong>Menu</strong></p>
     <ul>
-      <li><%= link_to "Home",{:action=>"home", :controller=>"pages"}%></li>
-      <li><%= link_to "Teachers", teachers_path %></li>
-      <li><%= link_to "Works", works_path %></li>
-      <li><%= link_to "Disciplines", disciplines_path %></li>
-      <li><%= link_to "About", {:action=>"about", :controller=>"pages"} %></li>
-      <li><%= link_to "Contact", {:action=>'contact',:controller=>'pages'} %></li>
+      <li><%= link_to "Inicio",{:action=>"home", :controller=>"pages"}%></li>
+      <li><%= link_to "Artistas", teachers_path %></li>
+      <li><%= link_to "Obras", works_path %></li>
+      <li><%= link_to "Disciplinas", disciplines_path %></li>
+      <li><%= link_to "Contacto", {:action=>'contact',:controller=>'pages'} %></li>
     </ul>
   </div>
   <%= yield %>
